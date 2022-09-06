@@ -1,0 +1,69 @@
+ * 
+ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  form 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1080px;
+    /* width: 1920px; */
+  }
+
+  form
+  {
+    width: 100%;
+  }
+
+  #signIn 
+  {
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  #signIn .signIn--title h1
+  {
+    text-align: center;
+    font-size: 42px;
+    padding: 38px;
+  }
+
+  #signIn input
+  {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+    width: 814px;
+    font-size: 16px;
+  }
+
+
+  /* submit */
+  #signIn .signIn--submit
+  {
+    text-align: center;
+  }
+
+  #signIn .signIn--submit button
+  {
+    text-align: center;
+    height: 42px;
+    width: 99px;
+    border: none;
+    border-radius: 30px;
+    margin: 43px;
+    background-color: #E57905;
+    color: rgba(0,0,0,0.8);
+  } 
+  
+
+ .fixxx
+ {
+  height: 114px;
+  background-color: #ccc;
+ }
