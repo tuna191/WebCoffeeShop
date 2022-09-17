@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/style/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="contact">
+
+        <div class="contact_img">
+            <img src="./asset/img/img-Product5.jpg" alt="ảnh">
+        </div>
+
+        <form action="" id="form_contact">
+
+            <div class="contact_title">
+                <h1>Bạn có điều thắc mắc ,  gói ý hoặc phản hồi? <br>
+                    Chúng tôi rất mong nhận được phản hồi từ bạn</h1>
+            </div>
+
+            <div class="contact_input">
+                <div class="contact_input__child">
+                    <input type="text" placeholder="Name" id="contact_input__name">
+                    <span class="form_message"></span>
+                </div>
+                <div class="contact_input__child">
+                    <input type="text" placeholder="Email" id="contact_input__email">
+                    <span class="form_message"></span>
+                </div>
+                <div class="contact_input__child">
+                    <input type="text" placeholder="Your message" id="contact_input__yourMessage">
+                    <span class="form_message"></span>
+                </div>
+
+                <div id="contact_submit">
+                    <button class="submit" type="submit">Submit <i class="fa-sharp fa-solid fa-paper-plane"></i> </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="./asset/js/contact.js"></script>
+    <script>
+        contactValidator( {
+            form:'#form_contact',
+            rules:[
+                contactValidator.isName('#contact_input__name'),
+                contactValidator.Email('#contact_input__email'),
+                contactValidator.YourMessage('#contact_input__yourMessage')
+            ]
+         } )
+    </script>
+</body>
+</html>
