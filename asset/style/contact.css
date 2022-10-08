@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   background-color: #313538;
+  margin: auto;
 }
 
 .contact_img img {
