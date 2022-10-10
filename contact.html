@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +14,10 @@
         $("#footerContainer").load("./Footer.html");
       })
     </script>
-    <link rel="stylesheet" href="../WebCoffeeShop/asset/style/CommonStyle.css">
-    <link rel="stylesheet" href="../WebCoffeeShop/asset/style/navStyle.css">
-    <link rel="stylesheet" href="../WebCoffeeShop/asset/style/FooterStyle.css">
-    <link rel="stylesheet" href="../WebCoffeeShop/asset/style/contact.css">
+    <link rel="stylesheet" href="./asset/style/CommonStyle.css">
+    <link rel="stylesheet" href="./asset/style/navStyle.css">
+    <link rel="stylesheet" href="./asset/style/FooterStyle.css">
+    <link rel="stylesheet" href="./asset/style/contact.css">
     <!-- link font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,10 +29,11 @@
 <body>
     <!-- Navigation -->
     <div id="navContainer"></div>
+
     <div id="contact">
     
         <div class="contact_img">
-            <img src="./asset/IMG-Coffees/espressoIce.jpg" alt="ảnh">
+            <img src="./asset/IMG-Coffees/img-Product5.jpg" alt="ảnh">
         </div>
     
         <form action="" id="form_contact" >
@@ -62,9 +64,7 @@
             </div>
         </form>
         </div>
-    <!-- footer -->
-    <div id="footerContainer"></div>
-    <script src="./contact.js"></script>
+    <script src="../WebCoffeeShop/asset/js/contact.js"></script>
     <script>
         contactValidator( {
             form:'#form_contact',
@@ -76,6 +76,9 @@
             data : [],
          } )
     </script>
+
+    <div id="footerContainer"></div>
+
 </body>
 
 </html>
