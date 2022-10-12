@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +19,6 @@
     <link rel="stylesheet" href="./asset/style/navStyle.css">
     <link rel="stylesheet" href="./asset/style/FooterStyle.css">
     <link rel="stylesheet" href="./asset/style/contact.css">
-    <link rel="stylesheet" href="./asset/style/login.css">
     <!-- link font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,62 +26,57 @@
     <!-- kits use for icon -->
     <script src="https://kit.fontawesome.com/1ecb12ccc1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
     <!-- Navigation -->
     <div id="navContainer"></div>
-    <div id="login">
-        <form action="" id="login_form">
+    <div id="contact">
+        <link rel="stylesheet" href="./asset/style/contact.css">
+        <div class="contact_img">
+            <img src="./asset/IMG-Coffees/img-Product5.jpg" alt="ảnh">
+        </div>
     
-            <div class="login_title">
-                <h1>Welcome to Coffee Web</h1>
-            </div>            
+        <form action="" id="form_contact" >
     
-            <div class="login_input">
-                
-                <div class="login_input__child">
-                    <input type="text" placeholder="Account" id="login_account_input"> <br>
+            <div class="contact_title">
+                <h1>Bạn có điều thắc mắc ,  gói ý hoặc phản hồi? <br>
+                   Chúng tôi rất mong nhận được phản hồi từ bạn</h1>
+            </div>
+    
+            <div class="contact_input">
+                <div class="contact_input__child">
+                    <input type="text" placeholder="Name" id="contact_input__name" name="name">
+                    <span class="form_message"></span>
+                </div>
+                <div class="contact_input__child">
+                    <input type="text" placeholder="Email" id="contact_input__email" name="email">
+                    <span class="form_message"></span>
+                </div>
+                <div class="contact_input__child">
+                    <input type="text" placeholder="Your message" id="contact_input__yourMessage" name="mess">
                     <span class="form_message"></span>
                 </div>
     
-                
-                <div class="login_input__child">
-                    <input type="text" placeholder="Email" id="login_email_input"> <br>
-                    <span class="form_message"></span>
-                </div>
-    
-                
-                <div class="login_input__child">
-                    <input type="text" placeholder="Password" id="login_password_input"> <br>
-                    <span class="form_message"></span>
-                </div>
-    
-                
-                <div class="login_submit">
-                    <button type="button" id="submit">
-                        Login
-                    </button>
+                <div id="contact_submit">
+                    <button class="submit" type="submit">Submit <i class="fa-sharp fa-solid fa-paper-plane"></i> </button>
                 </div>
     
             </div>
-    
         </form>
-    
-        <script src="./asset/js/login.js"></script>
-        <script>
-            loginValidator( {
-            form:'#login_form',
-            rules:[
-                loginValidator.isAccount('#login_account_input'),
-                loginValidator.isEmail('#login_email_input'),
-                loginValidator.isPassword('#login_password_input')
-            ],
-            showImformations: loginValidator.submit('#submit')
-         } )
-        </script>
     </div>
+    <script src="./asset/js/contact.js"></script>
+    <script>
+        contactValidator( {
+            form:'#form_contact',
+            rules:[
+                contactValidator.isName('#contact_input__name','tên'),
+                contactValidator.isEmail('#contact_input__email','email'),
+                contactValidator.isYourMessage('#contact_input__yourMessage','thông báo')
+            ],
+            data : [],
+         } )
+    </script>   
     <!-- footer -->
     <div id="footerContainer"></div>
 
