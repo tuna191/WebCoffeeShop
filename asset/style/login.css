@@ -53,7 +53,9 @@
   border-radius: 50px;
   background-color: #E57905;
   cursor: pointer;
+  font-weight: 600;
   font-size: 21px;
+  letter-spacing: 2px;
 }
 
 .invalid {
