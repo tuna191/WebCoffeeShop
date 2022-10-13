@@ -1,5 +1,3 @@
-
-
 #contact {
   display: flex;
   align-items: center;
@@ -8,32 +6,44 @@
   
 }
 
-.contact_img img {
-  width: 564px;
-  height: 987px;
-
+.contact_img {
+  height: 100%;
+  width: 30%;
 }
+
+.contact_img img
+{
+  height: 100%;
+  width: 100%;
+}
+
+.contact_img
 
 .contact_title h1 {
   font-size: 38px;
   padding-bottom: 78px;
 }
 
-#contact form {
+#contact > #form_contact  {
   color: #C69362;
-  margin: 0px 0px 190px 110px;
-  height: 512px;
-  width: 816px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 75%;
 }
 
 .contact_input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 200px;
+}
+
+.contact_input__child
+{
+  display: flex;
+  flex-direction: column;
 }
 
 #contact_submit {

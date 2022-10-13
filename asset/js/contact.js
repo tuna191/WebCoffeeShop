@@ -10,7 +10,6 @@ function contactValidator(options)
         {
             var inputElement = document.querySelector(rule.selector)
             var formMessage = inputElement.parentElement.querySelector('.form_message')
-            console.log(inputElement)
             if(inputElement)
             {
                 inputElement.onblur = () => {
