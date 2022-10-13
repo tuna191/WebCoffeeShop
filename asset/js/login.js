@@ -3,7 +3,6 @@
 function loginValidator(options)
 {
     const getForm = document.querySelector(options.form)
-    console.log(getForm);
     if(getForm)
     {
         let i = 0
