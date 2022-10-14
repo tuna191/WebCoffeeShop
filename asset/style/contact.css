@@ -3,49 +3,68 @@
 #contact {
   display: flex;
   align-items: center;
-  background-color: #313538;
+  background-color: var(--blackGrey);
   margin: auto;
+  
 }
 
-.contact_img img {
-  width: 564px;
-  height: 987px;
-  margin-top: 114px;
+.contact_img {
+  height: 100%;
+  width: 30%;
 }
+
+.contact_img img
+{
+  height: 100%;
+  width: 100%;
+}
+
+.contact_img
 
 .contact_title h1 {
   font-size: 38px;
   padding-bottom: 78px;
 }
 
-#contact form {
-  color: #C69362;
-  margin-left: 110px;
-  height: 512px;
-  width: 816px;
+#contact  #form_contact  {
+  color: var(--yellow);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 75%;
 }
-
+.contact_title {
+  margin: 50px 0 0 0;
+  padding: 50px 0 0 0;
+  width: 100%;
+  text-align: center;
+}
 .contact_input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 200px;
+}
+
+.contact_input__child
+{
+  display: flex;
+  flex-direction: column;
 }
 
 #contact_submit {
   text-align: center;
+  margin: 40px 0;
 }
 
 #contact_submit .submit {
   padding: 23px 51px;
   border-radius: 50px;
-  color: #313538;
+  color: var(--blackGrey);
   letter-spacing: 3px;
   font-size: 17px;
-  background-color: #c69362;
+  background-color: var(--yellowStrong);
   border: none;
 }
 #contact_submit .submit:hover {
@@ -56,22 +75,22 @@
 .contact_input input {
   width: 810px;
   border: none;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--while);
   outline: none;
   font-size: 23px;
   margin: 40px 0;
-  color: #C69362;
-  background-color: #313538;
+  color: var(--yellow);
+  background-color: var(--blackGrey);
   padding: 12px 0;
 }
 .contact_input input::-moz-placeholder {
-  color: #C69362;
+  color: var(--yellow);
 }
 .contact_input input:-ms-input-placeholder {
-  color: #C69362;
+  color: var(--yellow);
 }
 .contact_input input::placeholder {
-  color: #C69362;
+  color: var(--yellow);
 }
 .contact_input input:focus {
   border-bottom: 2px solid rgba(255, 255, 255, 0.676);

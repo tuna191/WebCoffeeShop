@@ -1,48 +1,90 @@
-<div id="login">
-    <form action="" id="login_form">
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="login_title">
-            <h1>Welcome to Coffee Web</h1>
-        </div>            
-
-        <div class="login_input">
-            
-            <div class="login_input__child">
-                <input type="text" placeholder="Account" id="login_account_input"> <br>
-                <span class="form_message"></span>
-            </div>
-
-            
-            <div class="login_input__child">
-                <input type="text" placeholder="Email" id="login_email_input"> <br>
-                <span class="form_message"></span>
-            </div>
-
-            
-            <div class="login_input__child">
-                <input type="text" placeholder="Password" id="login_password_input"> <br>
-                <span class="form_message"></span>
-            </div>
-
-            
-            <div class="login_submit">
-                <button type="button" id="submit">Login</button>
-            </div>
-
-        </div>
-
-    </form>
-
-    <script src="../WebCoffeeShop/asset/js/login.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeShop</title>
+    <!-- code do component -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        loginValidator( {
-        form:'#login_form',
-        rules:[
-            loginValidator.isAccount('#login_account_input'),
-            loginValidator.isEmail('#login_email_input'),
-            loginValidator.isPassword('#login_password_input')
-        ],
-        showImformations: loginValidator.submit('#submit')
-     } )
+      $(() =>{
+        $("#navContainer").load("./Navigation.html");
+        $("#footerContainer").load("./Footer.html");
+      })
     </script>
-</div>
+    <link rel="stylesheet" href="./asset/style/CommonStyle.css">
+    <link rel="stylesheet" href="./asset/style/navStyle.css">
+    <link rel="stylesheet" href="./asset/style/FooterStyle.css">
+    <link rel="stylesheet" href="./asset/style/contact.css">
+    <link rel="stylesheet" href="./asset/style/login.css">
+    <!-- link font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@700&display=swap" rel="stylesheet">
+    <!-- kits use for icon -->
+    <script src="https://kit.fontawesome.com/1ecb12ccc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div id="navContainer"></div>
+    <div id="login">
+        <form action="" id="login_form">
+    
+            <div class="login_title">
+                <h1>Welcome to Coffee Web</h1>
+            </div>            
+    
+            <div class="login_input">
+                
+                <div class="login_input__child">
+                    <input type="text" placeholder="Account" id="login_account_input"> <br>
+                    <span class="form_message"></span>
+                </div>
+    
+                
+                <div class="login_input__child">
+                    <input type="text" placeholder="Email" id="login_email_input"> <br>
+                    <span class="form_message"></span>
+                </div>
+    
+                
+                <div class="login_input__child">
+                    <input type="text" placeholder="Password" id="login_password_input"> <br>
+                    <span class="form_message"></span>
+                </div>
+    
+                
+                <div class="login_submit">
+                    <button type="button" id="submit">
+                        Login
+                    </button>
+                </div>
+    
+            </div>
+    
+        </form>
+    
+        <script src="./asset/js/login.js"></script>
+        <script>
+            loginValidator( {
+            form:'#login_form',
+            rules:[
+                loginValidator.isAccount('#login_account_input'),
+                loginValidator.isEmail('#login_email_input'),
+                loginValidator.isPassword('#login_password_input')
+            ],
+            showImformations: loginValidator.submit('#submit')
+         } )
+        </script>
+    </div>
+    <!-- footer -->
+    <div id="footerContainer"></div>
+
+</body>
+
+</html>
