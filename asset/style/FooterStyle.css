@@ -1,7 +1,7 @@
 #footer {
     display: flex;
     flex-direction: row;
-    background-color: #2F3338;
+    background-color: var(--bgrFooter);
     justify-content: space-between;
     align-items: center;
     min-height: 230px;
@@ -14,7 +14,7 @@
 }
 .footer__logo__head h3 {
     font-size: 27px;
-    color: #fff;
+    color: var(--while);
 }
 .footer__logo {
     margin: 0 0 40px 35px;
@@ -26,7 +26,7 @@
 }
 .footer__logo__member h4 {
     font-size: 13px;
-    color: #666;
+    color: var(--logoFooter);
     font-weight: 500;
 }
 .footer__logo__member{
@@ -35,7 +35,7 @@
 .footer__slogan h1 {
     font-size: 43px;
     color: C69362;
-    color: #C69362;
+    color: var(--yellow);
 }
 .address__container {
     display: flex;
@@ -44,7 +44,7 @@
     margin-bottom: 10px;
 }
 .address *{
-    color: #fff;
+    color: var(--while);
 }
 .address{
     margin: 25px 35px 40px 0;
