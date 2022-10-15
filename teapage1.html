@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeShop</title>
+    <!-- code do component -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(() =>{
+        $("#navContainer").load("./Navigation.html");
+        $("#footerContainer").load("./Footer.html");
+      })
+    </script>
+    <link rel="stylesheet" href="./asset/style/CommonStyle.css">
+    <link rel="stylesheet" href="./asset/style/navStyle.css">
+    <link rel="stylesheet" href="./asset/style/FooterStyle.css">
+    <link rel="stylesheet" href="./asset/style/contact.css">
+    <link rel="stylesheet" href="./asset/style/teapagecss1.css">
+    <!-- link font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@700&display=swap" rel="stylesheet">
+    <!-- kits use for icon -->
+    <script src="https://kit.fontawesome.com/1ecb12ccc1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div id="navContainer"></div>
+    <div class="Tea-page" id="shop">
+        <div class="tea_header">
+            <div>
+         <h2 class="tea_header_title">  Hộp Trà</h2>
+            </div>
+        </div>
+        <br>
+        <div class="tea-flex">
+            <div class="shop1">
+                <div class="shop-image">
+                    <img src="./asset/IMG-Coffees/TraThaoMoc.jpg" alt="trathaomoc">
+                </div>
+                <h3>Trà Thảo Mộc</h3>
+                <article>
+                    100.000 đ
+                </article>
+            </div>                 
+            <div class="shop1">
+                <div class="shop-image">
+                    <img src="./asset/IMG-Coffees/TraHoaCuc.jpg" alt="trahoacuc">
+                </div>
+                <h3>Trà Hoa Cúc</h3>
+                <article>
+                    90.000 đ
+                </article>
+            </div>                 
+            <div class="shop1">
+                <div class="shop-image">
+                    <img src="./asset/IMG-Coffees/TraHoaHong.jpg" alt="trahoahong">
+                </div>
+                <h3>Trà Hoa Hồng</h3>
+                <article>
+                    150.000 đ
+                </article>
+            </div>                 
+            <div class="shop1">
+                <div class="shop-image">
+                    <img src="./asset/IMG-Coffees/TraBacHa.jpg" alt="trabacha">
+                </div>
+                <h3>Trà Bạc Hà</h3>
+                <article>
+                    150.000 đ
+                </article>
+            </div>
+            <div class="trangduoi">
+                <div class="shop1">
+                    <div class="shop-image">
+                        <img src="./asset/IMG-Coffees/TraDen.jpg "alt="">
+                    </div>
+                    <h3>Trà Đen</h3>
+                    <article>
+                        100.000 đ
+                    </article>
+                </div>                 
+                <div class="shop1">
+                    <div class="shop-image">
+                        <img src="./asset/IMG-Coffees/TraBaTuong.jpg" alt="">
+                    </div>
+                    <h3>Trà Bá Tước</h3>
+                    <article>
+                        200.000 đ
+                    </article>
+                </div>  
+            </div>
+            
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footerContainer"></div>
+
+</body>
+
+</html>
