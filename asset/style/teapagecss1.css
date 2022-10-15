@@ -49,6 +49,7 @@ Set layout hinh`
     height: 420px;
     width: 320px;
     border-radius: 15px;
+    box-shadow: 8px 6px 3px 0px #00000040;
 }
 /*
 set hinh` phu hop
@@ -73,14 +74,16 @@ font chu item va gia tien
 */
 .shop1  h3 {
     color: black;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 600;    
     /*font-family:Arial, Helvetica, sans-serif;*/
     margin-left: 12px;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 .shop1 article{
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
     color: black;
     margin-left: 15px;
 }
