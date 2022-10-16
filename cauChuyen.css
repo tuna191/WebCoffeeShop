@@ -45,6 +45,7 @@
     float: left;
     font-size: 23px;
     font-weight: 900;
+    color: black;
  }
  aside a:hover{
     color: rgb(237, 176, 64);
@@ -82,6 +83,7 @@ aside h4{
  section a{
     font-size: 23px;
     font-weight: 100;
+    color: black;
  }
  section a:hover{
     color: rgb(237, 176, 64);
