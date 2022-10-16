@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
 #login {
   height: 100vh;
@@ -25,20 +20,20 @@
 .login_input__child input {
   border: none;
   outline: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--black);
   width: 800px;
   padding: 6px 0px;
 }
 .login_input__child input::-moz-placeholder {
-  color: #000;
+  color: var(--black);
   font-size: 16px;
 }
 .login_input__child input:-ms-input-placeholder {
-  color: #000;
+  color: var(--black);
   font-size: 16px;
 }
 .login_input__child input::placeholder {
-  color: #000;
+  color: var(--black);
   font-size: 16px;
 }
 
@@ -51,7 +46,7 @@
   width: 184px;
   height: 71px;
   border-radius: 50px;
-  background-color: #E57905;
+  background-color: var(--yellowStrong);
   cursor: pointer;
   font-weight: 600;
   font-size: 21px;
@@ -59,5 +54,5 @@
 }
 
 .invalid {
-  color: #a32424;
+  color: var(--invalid);
 }

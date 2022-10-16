@@ -6,7 +6,7 @@
     flex-direction: row;
     justify-content: space-between;
     height: 60px;
-    background-color: #eee;
+    background-color: var(--whileGrey);
     align-items: center;
     position: fixed;
     opacity: 0.9;
@@ -27,7 +27,9 @@
     font-size: 25px;
     font-weight: 800;
 }
-
+.nav a{
+    color: var(--black);
+}
 #nav__center {
     width: 50%;
 }
@@ -40,7 +42,9 @@
     display: flex;
     align-items: center;
 }
-
+.nav__center__content a{
+    color:var(--black);
+}
 #nav__login {
     font-size: 18px;
     font-weight: 600;
@@ -60,7 +64,7 @@
     flex-direction: row;
     top: 200%;
     justify-content: space-evenly;
-    background: #fff;
+    background: var(--while);
     width: 100%;
     left: 0;
     min-height: 260px;
