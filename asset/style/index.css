@@ -9,13 +9,13 @@ img.slide:not(:first-child){
     width: 100%;
     min-height: 600px;
 }
-.navContainer{
+.home__content__slideShow{
     position: relative;
 }
 
 .home__content__slideShow__btn {
     position: absolute;
-    top: 85%;
+    top: 94%;
     right: 37%;
 }
 .prev{
