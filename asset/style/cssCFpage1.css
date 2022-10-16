@@ -1,0 +1,102 @@
+
+/*html{
+    scroll-behavior: smooth;
+}*/
+body{
+    background: #FFF;
+}
+.CF-page{
+    width: 90%;
+    margin: 100px auto;
+}
+
+.CF-page .cf_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;  
+}
+/*
+Ten menu o tren 
+*/
+.cf_header h2{
+    color: black;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 25px;
+}
+/*
+Set layout hinh`
+*/
+.CF-page .cf-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-row-gap: 20px;
+}
+.cf-flex .shop1{
+    width: 24%;
+    color: #FFf;
+}
+.shop1 .shop-image{
+    overflow: hidden;
+    padding: 17px 5px;
+    margin-bottom: 3px;
+    height: 420px;
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 8px 6px 3px 0px #00000040;
+}
+/*
+set hinh` phu hop
+*/
+.shop-image img{
+    width: 100%;
+    transition: .6s ease-in-out;
+    border-radius: 20px;
+    height: 100%;
+    box-shadow: 8px 6px 3px 0px #00000040;
+    object-position: center;
+    object-fit: cover;
+    transform: scale(1.1);
+    
+}
+.shop-image:hover img{
+    transform: scale(1.2);    
+}
+/*
+font chu item va gia tien 
+*/
+.shop1  h3 {
+    color: black;
+    font-size: 19px;
+    font-weight: 600;    
+    /*font-family:Arial, Helvetica, sans-serif;*/
+    margin-left: 12px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.shop1 article{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin-left: 15px;
+}
+.trangduoi{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.trangduoi .shop1 {
+    margin-top: 30px;
+    padding: 15px 5px;
+    margin-left: -15px;
+    margin-right: 25px;
+}
+.cf_header_title::before{
+    content:"";
+    padding: 3px ;
+    background-color: #E57905;
+    margin-right: 12px;  
+}
