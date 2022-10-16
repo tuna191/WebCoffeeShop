@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+.contentContainer{
+    position: relative;
+    top:60px;
+    /* display: flex; */
+    height: auto;
+}
+.historyWorld{
+    background-color: #8AADB5;
+    height: 750px;
+}
+
+h1{
+    text-align: center  ;
+    font-size: 50px;
+    line-height: 90px;
+}
+.textDoc,img{
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+p{
+    font-size: 25px;
+}
+.historyVN{
+    background-color: #2F3338;
+    height:750px;
+}
+.child{
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+.historyVN .child img,p{ 
+    width: 48%;
+    height: 46%;
+    float: left;
+    margin: auto;
+    padding: 20px;
+    font-size: 25px;
+}
+.CfArabica{
+    height: 780px;
+}
+.CfArabicaTextDoc{
+    width: 65%;  
+    float: left; 
+    margin: 0px 0px 0px 45px;
+}
+.CfArabicaTextDoc p{
+    font-size: 25px;
+}
+.cfaImg{
+    width: 28%;
+    float: left;
+}
+.cfRobusta{
+    height: 750px;
+    padding: 20px;
+    background-color: #2F3338;
+}
+.cfRText{
+    width: 55%;
+    float: left;
+}
+.cfRText p{
+    width: 100%;
+}
+.cfRobusta img{
+    width: 45%;
+}
+.cfCherry{
+    height: 750px;
+}
+.cfCherry .Doc{
+    width: 55%;
+    float: left;
+    padding: 30px   0px 30px 30px;
+}
+.cfCherry .Doc p{
+    width: 100%;
+    font-size: 23px;
+
+}
+.cfCherry img{
+    width: 45%;
+    padding: 30px 30px 30px 0px;
+}
