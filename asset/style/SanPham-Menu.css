@@ -14,7 +14,7 @@ set do rong cho page
 }
 .sanpham_menu .sanpham_header{
     display: flex;
-    margin-bottom: 10px; 
+    margin-bottom: 50px; 
 }
 /*
 Ten menu o tren 
@@ -41,14 +41,14 @@ Set layout hinh`
     color: #FFf;
 }
 .sanpham .sanpham-image{
-   /* position: relative;*/
     overflow: hidden;
     padding: 17px 5px;
     margin-bottom: 3px;
-    height: 400px;
-    width: 280px;
+    height: 370px;
+    width: 250px;
     border-radius: 15px;
     box-shadow: 8px 6px 3px 0px #00000040;
+    cursor: pointer;
 }
 /*
 set hinh` phu hop
@@ -73,7 +73,7 @@ font chu item va gia tien
 */
 .sanpham  h3 {
     color: black;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 600;    
     /*font-family:Arial, Helvetica, sans-serif;*/
     margin-left: 12px;

@@ -15,7 +15,7 @@ set do rong cho page
 }
 .Tea-page .tea_header{
     display: flex;
-    margin-bottom: 10px; 
+    margin-bottom: 50px; 
 }
 /*
 Ten menu o tren 
@@ -41,15 +41,15 @@ Set layout hinh`
     width: 24%;
     color: #FFf;
 }
-.shop1 .shop-image{
-   /* position: relative;*/
+.shop1 .shop-image {
     overflow: hidden;
     padding: 17px 5px;
     margin-bottom: 3px;
-    height: 420px;
-    width: 320px;
+    height: 370px;
+    width: 250px;
     border-radius: 15px;
     box-shadow: 8px 6px 3px 0px #00000040;
+    cursor: pointer;
 }
 /*
 set hinh` phu hop
