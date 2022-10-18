@@ -1,0 +1,125 @@
+
+/* 
+font-family: 'Poppins', sans-serif; 
+*/
+/*body{
+    background: #fff;
+}*/
+/*
+set do rong cho page
+*/
+.sanpham_menu{
+    width: 90%;
+    margin: 100px auto;
+}
+.sanpham_menu .sanpham_header{
+    display: flex;
+    margin-bottom: 10px; 
+}
+/*
+Ten menu o tren 
+*/
+.sanpham_header h2{
+    color: black;
+    text-transform: capitalize;
+    /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-weight: 600;
+    font-size: 25px;
+}
+/*
+Set layout hinh`
+*/
+.sanpham_menu .sanpham_menu_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-row-gap:20px;
+}
+.sanpham_menu_flex .sanpham{
+    width: 24%;
+    color: #FFf;
+}
+.sanpham .sanpham-image{
+   /* position: relative;*/
+    overflow: hidden;
+    padding: 17px 5px;
+    margin-bottom: 3px;
+    height: 400px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 8px 6px 3px 0px #00000040;
+}
+/*
+set hinh` phu hop
+*/
+.sanpham-image img{
+    width: 100%;
+    transition: .6s ease-in-out;
+    border-radius: 20px;
+    height: 100%;
+    box-shadow: 8px 6px 3px 0px #00000040;
+    object-position: center;
+    object-fit: cover;
+    transform: scale(1.1);
+    
+}
+.sanpham-image:hover img{
+    transform: scale(1.2);
+   
+}
+/*
+font chu item va gia tien 
+*/
+.sanpham  h3 {
+    color: black;
+    font-size: 19px;
+    font-weight: 600;    
+    /*font-family:Arial, Helvetica, sans-serif;*/
+    margin-left: 12px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.sanpham article{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin-left: 15px;
+}
+.trangduoi{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.trangduoi .sanpham {
+    margin-top: 30px;
+    padding: 15px 5px;
+    margin-left: -15px;
+    margin-right: 25px;
+}
+.sanpham_header_title::before{
+    content:"";
+    padding: 3px ;
+    background-color: #E57905;
+    margin-right: 12px;  
+}
+/*.tea_header_title{
+    margin-left: 3px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
