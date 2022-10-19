@@ -11,6 +11,7 @@ function loginValidator(options)
             const inputElement = document.querySelector(rule.selection)
             inputElement.onblur = () =>
             {
+
                 const errorMessage = rule.check(inputElement.value)
                 const formMessage = inputElement.parentElement.querySelector('.form_message')
 
@@ -40,7 +41,7 @@ loginValidator.isAccount = (selection) =>
     return {
         selection,
         check: (e) => {
-            return e ? undefined: 'Bạn chưa điền thông tin trường này. Mời bạn nhập thông tin'
+            return e ? undefined: 'Please write your account'
         }
     }
 }
@@ -51,7 +52,15 @@ loginValidator.isEmail = (selection) =>
         selection,
         check: (e) => {
             var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            return regex.test(e) ? undefined: 'Đây không phải là email.Mời bạn nhập email'
+            if(e)
+            {
+                return regex.test(e) ? undefined : `This is not an email.
+                Please write your email again.`
+            }
+            else if(e === '')
+            {
+                return 'Please write your email'
+            }
         }
     }
 }
@@ -61,7 +70,16 @@ loginValidator.isPassword = (selection) =>
     return {
         selection,
         check: (e) => {
-            return e ? undefined: 'Bạn chưa điền thông tin trường này. Mời bạn nhập thông tin'
+            const len = e.length
+            
+            if(e)
+            {
+                return len >= 6 ? undefined : `Your password is not six characters long`
+            }
+            else if(e === '')
+            {
+                return 'Please write your password'
+            }
         }
     }
 }
