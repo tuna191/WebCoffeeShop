@@ -1,6 +1,3 @@
-*{
-    box-sizing: border-box;
-}
 .contentContainer{
     position: relative;
     top:60px;
@@ -10,6 +7,7 @@
 .historyWorld{
     background-color: #8AADB5;
     height: 750px;
+    padding: 50px 0 60px 0;
 }
 
 h1{
@@ -28,6 +26,7 @@ p{
 .historyVN{
     background-color: #2F3338;
     height:750px;
+    padding: 50px 0 60px 0;
 }
 .child{
     /* align-items: center; */
@@ -45,6 +44,7 @@ p{
 }
 .CfArabica{
     height: 780px;
+    padding: 50px 0 60px 0;
 }
 .CfArabicaTextDoc{
     width: 65%;  
@@ -59,9 +59,9 @@ p{
     float: left;
 }
 .cfRobusta{
-    height: 750px;
-    padding: 20px;
+    min-height: 600px;
     background-color: #2F3338;
+    padding: 50px 0 60px 0;
 }
 .cfRText{
     width: 55%;
@@ -75,6 +75,7 @@ p{
 }
 .cfCherry{
     height: 750px;
+    padding: 50px 0 60px 0;
 }
 .cfCherry .Doc{
     width: 55%;

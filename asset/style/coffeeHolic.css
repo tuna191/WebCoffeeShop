@@ -1,0 +1,96 @@
+ #coffee_Holic
+ {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 101px;
+    margin-bottom: 32px;
+    position: relative;
+ }
+
+ .coffee_Holic__title
+ {
+    text-align: center;
+    margin: 101px 0px;
+ }
+ .coffee_Holic__title h1
+ {
+    position: relative;
+    font-size: 47px;
+    margin: 52px 0;
+ }
+ .coffee_Holic__title h1::after
+ {
+    content: "";
+    position: absolute;
+    background-color: #E57905;
+    height: 6px;
+    width: 105px;
+    bottom: -10px;
+    left: 46%;
+    border-radius: 4px;
+ }
+
+ .story
+ {
+    display: flex;
+    padding: 6px 0;
+ }
+
+ .story img
+ {
+    width: 23%;
+    border: none;
+    border-radius: 6%;
+    margin-right: 25px;
+ }
+
+
+
+ .im_story
+ {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+ .im_story a
+ {
+    color: #333;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+
+ .im_story p
+ {
+    width: 86%;
+ }
+
+ .cfh_fixed
+ {
+    position: absolute;
+    top: 48%;
+    right: -1%;
+ }
+ .cfh_fixed h1
+ {
+    color: #E57905;
+ }
+
+ .cfh_fixed_content
+ {
+    margin: 18px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+    font-size: 18px;
+ }
+
+ .cfh_fixed_content h4:hover
+ {
+    cursor: pointer;
+    color: #E57905;
+    opacity: 0.8;
+ }

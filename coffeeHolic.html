@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Câu Chuyện</title>
+        <!-- code do component -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+      $(() =>{
+        $("#navContainer").load("./Navigation.html");
+        $("#footerContainer").load("./Footer.html");
+      }) 
+    </script>
+        <link rel="stylesheet" href="./asset/style/CommonStyle.css">
+        <link rel="stylesheet" href="./asset/style/navStyle.css">
+        <link rel="stylesheet" href="./asset/style/FooterStyle.css">
+        <link rel="stylesheet" href="./asset/style/coffeeHolic.css">
+        <!-- link font-family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Balinese:wght@700&display=swap"
+            rel="stylesheet">
+        <!-- kits use for icon -->
+        <script src="https://kit.fontawesome.com/1ecb12ccc1.js"
+            crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <div id="navContainer"></div>
+        <div id="coffee_Holic">
+            <div class="coffee_Holic__title">
+                <h1>Coffee Holic</h1>
+                <p class="cfH_describe">Nơi mọi người xích lại gần nhau, đề cao giá trị kết
+                    nối con người
+                    và sẻ chia thân tình bên <br> những ly cà phê, ly trà đượm
+                    hương,
+                    truyền cảm hứng về lối sống hiện đại.</p>
+            </div>
+            <div class="cfH_story">
+                <div class="story_first story">
+                    <img src="./asset/IMG-Coffees/cfHolic.jpg" alt="">
+                    <div class="im_story">
+                        <a href="#">Cách nhận biết hương vị cà phê Robusta nguyên
+                            chất...</a>
+                        <p class="date">15/3/2022</p>
+                        <p class="news">
+                            Cùng Arabita, Robusta cũng là loại cà phê nổi tiếng được
+                            sử dụng phổ biến...
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="story_second story">
+                    <img src="./asset/IMG-Coffees/cfHolic2.jpg" alt="">
+                    <div class="im_story">
+                        <a href="#">Bật mí nhiệt độ lí tưởng để pha cà phê ngon, đậm
+                            đà hương vị</a>
+                        <p class="date">15/3/2022</p>
+                        <p class="news">
+                            Nhiệt độ nước là một yếu tố quan trọng để có thể tạo nên những...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="cfh_fixed">
+                <div class="cfh_fixed_cdk">
+                      <h1 class="cfh_fixed_title">Chủ đề khác</h1>
+                      <div class="cfh_fixed_content">
+                          <h4>Chuyện cà phê</h4>
+                          <h4>Pha cà phê</h4>
+                      </div>
+                </div>
+                <div class="cfh_fixed_cdk">
+                   <h1 class="cfh_fixed_title">Cà phê Holic</h1>
+                   <div class="cfh_fixed_content">
+                       <h4>Chuyện cà phê</h4>
+                       <h4>Pha cà phê</h4>
+                   </div>
+               </div>
+               </div>
+        </div>
+        <!-- footer -->
+        <div id="footerContainer"></div>
+
+    </body>
+
+</html>
